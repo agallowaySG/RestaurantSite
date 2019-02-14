@@ -2,49 +2,180 @@
 <html>
 	<head>
 		<title> The Roach Coach - Menu </title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+               <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+
+		<style>
+				table {
+					border-collapse: collapse;
+					width: 100%;
+					background-color: LightGray;
+				}
+
+				table, th, td {
+					border: 5;
+				}
+
+				th {
+					background-color: lightgray;
+					text-align: left ;
+					border-bottom: 4px solid black;
+				}
+
+				td {
+					text-align: center;
+					vertical-align:top;
+					width: 33%;
+				}
+		</style>
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div align="center"> <h1> The Roach Coach</h1> </div>
-		<hr/>
-		&nbsp;
-		<a href="file:///Users/agalloway/projects/prework/restaurantHome.html">Home</a> &nbsp;
-		<a href="file:///Users/agalloway/projects/prework/restaurantMenu.html">Menu</a>&nbsp;
-		<a href="file:///Users/agalloway/projects/prework/restaurantContact.html">Contact Us</a>&nbsp;
-		<hr/>
-		<br/>
+	<div class="container-fluid">
+		<header class="restaurantHeader"> 
+			<h1> The Roach Coach</h1>
+			<hr/>
+			<ul class="nav nav-tabs">
+			<li><a href="restaurantHome.html"> <span class="glyphicon glyphicon-home"></span></a> &nbsp;</li>
+			<li class="active"><a href="restaurantMenu.html">Menu</a>&nbsp;</li>
+			<li><a href="restaurantContact.html">Contact Us</a>&nbsp;</li>
+			</ul>
+
+		</header>
+<br/>
+<hr/>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>We're opening a new location!</h4>
+	<br/>
+	<br/>
+      </div>
+
+      <div class="item">
+        <h4>We're rolling out our seasonal menu, with special options for this season.</h4>
+	<br/>
+	<br/>
+
+      </div>
+    
+      <div class="item">
+        <h4>The Drink of the Month is SG Special Brew.</h4>
+	<br/>
+	<br/>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
 		<table>
 			<tr>
 				<td align="center">
-					Yummy option <br/>
-					This is the description of the option. <br/>
-					$6.66 <br/>
+					<h3>Cricket Fritters</h3>
+					Grilled cricket legs deep fried in a cricket flour fritter served with a spicy dipping sauce. <br/>
+					$2.99 <br/>
 				</td>
 				<td align="center">
-					Yummy option <br/>
-					This is the description of the option. <br/>
-					$6.66 <br/>
+					<h3>Worm Puree </h3>
+					Worms, worms and more worms.  Slimy yet satisfying. <br/>
+					$3.66 <br/>
 				</td>
 				<td align="center">
-					Yummy option <br/>
-					This is the description of the option. <br/>
-					$6.66 <br/>
+					<h3>Moth Burger </h3>
+					The finest moth wings mixed with fresh caterpillar into a succulent patty cooked to order.  Garnished with lettuce, tomato and cocoon. Includes side of spider eggs.<br/>
+					$7.88 <br/>
 				</td>
-			<tr>			
+			<tr>		
+			<tr>
+				<td align="center">
+					<h3>Spider Cavier</h3>
+					Freshly harvested spider eggs. <br/>
+					$14.99 <br/>
+				</td>
+				<td align="center">
+					<h3>Broiled Centipede </h3>
+					Crispy and enough drumsticks to share. <br/>
+					$20.66 <br/>
+				</td>
+				<td align="center">
+					<h3>Bombe Alaskan Cockroach </h3>
+					Our signature dish! Cockroach sponge cake, cockroach ice cream, cockroach egg meringue flambéed at your table.  <br/>
+					$17.88 <br/>
+				</td>
+			<tr>	
+			<tr>
+				<td align="center">
+					<table style="border-collapse: separate;">
+						<tr>
+							<td colspan=3> <h3>Beverages</h3> </th>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align:left;"> Root Beer </td>
+							<td> $3.00 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align:left"> Bottled Water </td>
+							<td> $1.25 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align:left"> Lemonade </td>
+							<td> $1.00 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align:left"> Iced Tea </td>
+							<td> $1.25 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align:left"> SG Special Brew </td>
+							<td> $0.75 </td>
+						</tr>
+					</table>
+				</td>
+				<td align="center">
+					<br/>
+				</td>
+				<td align="center">
+					 <br/>
+				</td>
+			<tr>		
 
 
 
 		</table>
 
-		<hr/>
-		<div align="center">
+		<footer class="restaurantFooter">
 			66 Back Alley, Bugtown, KY, 42224 <br/>
 			<br/>
 			555-555-BUGZ <br/>
-		</div>
-
-		<hr/>
-
+			<hr/>
+		</footer>
+	</div>
 	</body>
 
 </html>
